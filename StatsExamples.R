@@ -65,3 +65,9 @@ catch.lm <- lm(CatchRate ~ TotalStat, data = pokedex)
 summary(catch.lm)
 plot(pokedex$CatchRate~pokedex$TotalStat)
 abline(-0.430933, 282.65423, col = "red", lwd = 2)
+
+###ChiSq comparing prop of Legendaries/Mythicals/normal of typings
+legend_typings <- read.csv("Legendaries by Type.csv")
+
+typings <- c("Grass", "Fire", "Water", "Poison", "Dark", "Fairy", "Steel", "Flying", "Normal", "Dragon", "Psychic", "Fighting", "Bug", "Ice","Electric", "Ground", "Rock")
+chisq.test(legend_typings$Grass, legend_typings$Poison)

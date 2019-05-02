@@ -5,6 +5,15 @@ qqline(dragons$Height)
 t.test(dragons$Height, mu = mean(pokedex$Height), alternative = "greater")
 t.test(dragons$Height, mu = mean(pokedex$Height[pokedex$Type1 != "Dragon" & pokedex$Type2 != "Dragon"]), alternative = "greater")
 
+
+##One-Sample T-Test if avg height Rattata in Pokemon Go is different from Rattata in main games
+rattata <- read.csv("Rattata PoGo Sample.csv")
+t.test(rattata$Height, mu = 0.3, alternative = "less")
+
+require(pwr)
+pwr.t.test(n = 41, d = 0.5, sig.level = 0.05, power = , type = "one.sample", alternative = "less")
+
+
 ###Independent two sample T test comparing total stats of mega vs nonmega forms
 mega_stat <- pokedex$TotalStat[pokedex$Form == "Mega"]
 nonmega_stat <- pokedex$TotalStat[pokedex$Form != "Mega"]

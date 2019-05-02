@@ -318,9 +318,9 @@ DexNum,Name,Form,Type1,Type2,TotalStat,HP,Attack,Defense,SpAtk,SpDef,Speed,Gener
 275,Shiftry,,Grass,Dark,480,90,100,60,90,60,80,3,No,Medium Fast,50,45,70,PU,1.3,59.6,15,Field,Grass
 276,Taillow,,Normal,Flying,270,40,55,30,30,30,85,3,No,Medium Fast,50,200,70,LC,0.3,2.3,15,Flying,
 277,Swellow,,Normal,Flying,430,60,85,60,50,50,125,3,No,Medium Fast,50,45,70,RU,0.7,19.8,15,Flying,
-278,Wingull,,Water,Flying,270,40,30,30,55,30,85,3,Legendary,Medium Fast,50,190,70,PU,0.6,9.5,20,Water1,Flying
-279,Pelipper,,Water,Flying,430,60,50,100,85,70,65,3,Legendary,Medium Fast,50,45,70,OU,1.2,28,20,Water1,Flying
-280,Ralts,,Psychic,Fairy,198,28,25,25,45,35,40,3,Legendary,Fast,50,235,35,LC,0.4,6.6,20,,
+278,Wingull,,Water,Flying,270,40,30,30,55,30,85,3,No,Medium Fast,50,190,70,PU,0.6,9.5,20,Water1,Flying
+279,Pelipper,,Water,Flying,430,60,50,100,85,70,65,3,No,Medium Fast,50,45,70,OU,1.2,28,20,Water1,Flying
+280,Ralts,,Psychic,Fairy,198,28,25,25,45,35,40,3,No,Fast,50,235,35,LC,0.4,6.6,20,,
 281,Kirlia,,Psychic,Fairy,278,38,35,35,65,55,50,3,No,Fast,50,120,35,PU,0.8,20.2,20,,
 282,Gardevoir,,Psychic,Fairy,518,68,65,65,125,115,80,3,No,Fast,50,45,35,RU,1.6,48.4,20,,
 282,Gardevoir,Mega,Psychic,Fairy,618,68,85,65,165,135,100,3,No,Fast,50,45,35,UUBL,1.6,48.4,20,,

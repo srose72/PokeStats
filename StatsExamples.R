@@ -51,9 +51,6 @@ smogon.aov <- aov(pokedex$TotalStat~pokedex$Smogon)
 anova(smogon.aov)
 TukeyHSD(smogon.aov)
 
-##Power for Rattata sample - greater alt w/ d = 0.5
-pwr.t.test(n = length(ratatta), d = 0.5, sig.level = 0.05, power = , type = "one.sample", alternative = "greater")
-
 ##Height and weight
 cor(pokedex$Height, pokedex$Weight)
 weight.lm <- lm(Weight ~ Height, data = pokedex)

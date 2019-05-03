@@ -12,7 +12,7 @@ t.test(rattata$Height, mu = 0.3, alternative = "less")
 sd(rattata$Rattata_Height)
 
 require(pwr)
-pwr.t.test(n = 41, d = 0.5, sig.level = 0.05, power = , type = "one.sample", alternative = "less")
+pwr.t.test(n = 41, d = 0.5, sig.level = 0.05, power = , type = "one.sample", alternative = "two.sided")
 
 
 ###Independent two sample T test comparing total stats of mega vs nonmega forms

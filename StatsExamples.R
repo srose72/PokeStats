@@ -9,6 +9,7 @@ t.test(dragons$Height, mu = mean(pokedex$Height[pokedex$Type1 != "Dragon" & poke
 ##One-Sample T-Test if avg height Rattata in Pokemon Go is different from Rattata in main games
 rattata <- read.csv("Rattata PoGo Sample.csv")
 t.test(rattata$Height, mu = 0.3, alternative = "less")
+sd(rattata$Rattata_Height)
 
 require(pwr)
 pwr.t.test(n = 41, d = 0.5, sig.level = 0.05, power = , type = "one.sample", alternative = "less")
@@ -71,3 +72,17 @@ legend_typings <- read.csv("Legendaries by Type.csv")
 
 typings <- c("Grass", "Fire", "Water", "Poison", "Dark", "Fairy", "Steel", "Flying", "Normal", "Dragon", "Psychic", "Fighting", "Bug", "Ice","Electric", "Ground", "Rock")
 chisq.test(legend_typings$Grass, legend_typings$Poison)
+
+###ANOVA and Tukey: weight and catch rate, excluding legendaries
+standard <- subset(pokedex, Legendary == "No")
+require(car)
+recode(standard$Weight, "c(0:300 = 'Light', 301:600 = 'Medium', 601:Inf = 'Heavy'); else = NA")
+
+thicc.aov <- aov(standard$Weight~factor(standard$CatchRate))
+summary(thicc.aov)
+plot(thicc.aov, 1)
+plot(thicc.aov, 2)
+
+TukeyHSD(thicc.aov)
+
+par(mfrow = c(1,2))
